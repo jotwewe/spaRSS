@@ -125,7 +125,7 @@ public class EntriesCursorAdapter extends ResourceCursorAdapter {
 
         if (mShowFeedInfo && mFeedNamePos > -1) {
             if (feedName != null) {
-                holder.dateTextView.setText(Html.fromHtml(new StringBuilder("<font color='#247ab0'>").append(feedName).append("</font>").append(Constants.COMMA_SPACE).append(StringUtils.getDateTimeString(cursor.getLong(mDatePos))).toString()));
+                holder.dateTextView.setText(Html.fromHtml(new StringBuilder("<font color='#e5ab00'>").append(feedName).append("</font>").append(Constants.COMMA_SPACE).append(StringUtils.getDateTimeString(cursor.getLong(mDatePos))).toString()));
             } else {
                 holder.dateTextView.setText(StringUtils.getDateTimeString(cursor.getLong(mDatePos)));
             }

@@ -31,8 +31,10 @@
             android:gravity="top"
             android:maxLines="4"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@layout/textview"
             android:textIsSelectable="false"/>
 
+        <!-- mit dem folgenden wird die Artikelzeit dargestellt -->
         <TextView
             android:id="@android:id/text2"
             android:layout_width="wrap_content"
@@ -41,6 +43,7 @@
             android:drawablePadding="3dp"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/amberd"
             android:textIsSelectable="false"/>
 
     </LinearLayout>
