@@ -31,7 +31,7 @@ android {
 
     buildTypes {
         release {
-            signingConfig signingConfigs.release
+            signingConfig null
 
             minifyEnabled true
             shrinkResources true
@@ -42,9 +42,6 @@ android {
     productFlavors {
         floss {
             applicationId 'net.etuldan.sparss.floss'
-        }
-        gplay {
-            applicationId 'net.etuldan.sparss'
         }
     }
 
@@ -60,7 +57,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //wearApp project(':wear')\n' +
     compile 'com.android.support:appcompat-v7:23.+'
-    gplayCompile 'com.google.android.gms:play-services-wearable:+'
     compile 'com.melnykov:floatingactionbutton:+'
     compile 'org.jsoup:jsoup:+'
     compile 'com.squareup.picasso:picasso:+'
